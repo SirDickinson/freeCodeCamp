@@ -1,6 +1,7 @@
 ---
 title: Python Boolean Operations
 ---
+
 <a href='https://docs.python.org/3/reference/expressions.html#and' target='_blank' rel='nofollow'>`and`</a>, <a href='https://docs.python.org/3/reference/expressions.html#or' target='_blank' rel='nofollow'>`or`</a>, <a href='https://docs.python.org/3/reference/expressions.html#not' target='_blank' rel='nofollow'>`not`</a>
 
 <a href='https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not' target='_blank' rel='nofollow'>Python Docs - Boolean Operations</a>
@@ -45,3 +46,11 @@ not x | if x is false, then True, else False | (3)
     True
     >>> False or False   # Second argument is evaluated.
     False
+    
+Boolean operations can be used to see if a variable meets several critia in a single `if` statement before continuing onto the next part of a program.
+A common example is a company doing a recall on specific years of specific models of their cars. 
+The example looks like this:
+    if (1999 <= modelYear <= 2002 and modelName == "name1") or (2004 <= modelYear <= 2007 and modelName == "name2"):
+    recalled = True
+else:
+    recalled = False
